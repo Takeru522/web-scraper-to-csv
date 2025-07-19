@@ -12,17 +12,11 @@ Scrapes product data from a webpage (https://books.toscrape.com), processes it, 
 - *(Optional)* Ready for daily scheduling
 
 ---
+# 🛡 CAPTCHA Awareness
 
-## 🔧 Tools Used
+This scraper simulates real-world CAPTCHA detection. If a CAPTCHA is “detected”, the script will:
+- Halt scraping
+- Skip saving a broken dataset
+- Log a warning to the console
 
-- `requests`
-- `BeautifulSoup`
-- `pandas`
-
----
-
-## ▶️ How to Run
-
-```bash
-pip install -r requirements.txt
-python main.py
+This is a safe, ethical way to demonstrate awareness of scraping limitations — no bypass or violation of site terms involved.
